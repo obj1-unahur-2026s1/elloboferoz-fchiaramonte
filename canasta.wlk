@@ -1,5 +1,4 @@
 import manzana.*
-import caperucita.*
 
 object canasta {
   var cantidadDeManzanas = 6
