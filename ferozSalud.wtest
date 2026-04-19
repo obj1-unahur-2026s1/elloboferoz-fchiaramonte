@@ -1,0 +1,25 @@
+import feroz.*
+import historia.*
+
+describe "Salud del lobo Feroz" {
+
+  test "Inicialmente el lobo no está saludable" {
+    assert.that(!feroz.estaSaludable())
+  }
+
+  test "Después de la versión clásica, el lobo puede quedar saludable" {
+    // Act
+    historia.versionClasica()
+
+    // Assert
+    assert.that(feroz.estaSaludable())
+  }
+
+  test "Después del final con cazador, el lobo no queda saludable" {
+    // Act
+    historia.finalConCazador()
+
+    // Assert
+    assert.that(!feroz.estaSaludable())
+  }
+}
