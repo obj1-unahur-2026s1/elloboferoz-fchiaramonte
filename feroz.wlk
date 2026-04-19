@@ -13,6 +13,10 @@ object feroz {
     peso += algo.peso() * 0.1
   }
 
+method cambiarPeso(cantidad) {
+  peso += cantidad
+}
+
   method sufrirCrisis() {
     peso = pesoInicial
   }
